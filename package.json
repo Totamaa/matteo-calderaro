@@ -12,7 +12,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "deploy": "git checkout dev && git branch deploy-prod && git checkout deploy-prod && npm run build && git add . && git commit -m \"deploy PROD\" && git push deploy-prod:deploy-prod"
+    "deploy": "git checkout dev && git branch deploy-prod && git checkout deploy-prod && npm run build && git add . && git commit -m \"deploy PROD\" && git push origin deploy-prod:deploy-prod"
   },
   "dependencies": {
     "vue": "^3.3.11",
